@@ -9,8 +9,6 @@ void VvodVect(float*& x, int nx)
 		scanf("%f", &x[i]);
 	}
 	printf("\n");
-	return;
-
 }
 
 void VivodVect(float* x, int nx)
@@ -20,7 +18,6 @@ void VivodVect(float* x, int nx)
 		printf("%f ", x[i]);
 	}
 	printf("\n");
-	return;
 }
 
 float Sum(float* x, int nx)
@@ -56,7 +53,6 @@ void FormMatrix(float**& z, float* x, float* y, int nx)
 			z[i][j] = x[i] / (y[j] + x[i] * x[i]);
 		}
 	}
-	return;
 }
 
 void VivodMatrix(float** x, int nx)
@@ -69,7 +65,6 @@ void VivodMatrix(float** x, int nx)
 		}
 		printf("\n");
 	}
-	return;
 }
 
 void FindMax(float** z, int nx, int& imax, int& jmax)
@@ -89,8 +84,6 @@ void FindMax(float** z, int nx, int& imax, int& jmax)
 			}
 		}
 	}
-	return;
-
 }
 
 void FreeMemoryMatrix(float**& x, int nx)
@@ -100,11 +93,9 @@ void FreeMemoryMatrix(float**& x, int nx)
 		delete[] x[i];
 	}
 	delete[]x;
-	return;
 }
 
 void FreeMemoryVector(float*& x)
 {
 	delete[]x;
-	return;
 }

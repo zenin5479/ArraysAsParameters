@@ -1,6 +1,5 @@
 #include "lib.h"
 
-
 void VvodVect(float*& x, int nx)
 {
 	x = new float[nx];
@@ -13,6 +12,7 @@ void VvodVect(float*& x, int nx)
 	return;
 
 }
+
 void VivodVect(float* x, int nx)
 {
 	for (int i = 0; i < nx; i++)
@@ -22,6 +22,7 @@ void VivodVect(float* x, int nx)
 	printf("\n");
 	return;
 }
+
 float Sum(float* x, int nx)
 {
 	float s = 0.0;
@@ -31,6 +32,7 @@ float Sum(float* x, int nx)
 	}
 	return s;
 }
+
 bool Check(float* x, int nx, float t)
 {
 	int i = 0;
@@ -42,6 +44,7 @@ bool Check(float* x, int nx, float t)
 	}
 	return fl;
 }
+
 void FormMatrix(float**& z, float* x, float* y, int nx)
 {
 	z = new float* [nx];
@@ -68,6 +71,7 @@ void VivodMatrix(float** x, int nx)
 	}
 	return;
 }
+
 void FindMax(float** z, int nx, int& imax, int& jmax)
 {
 	float Max = z[0][0];
@@ -88,6 +92,7 @@ void FindMax(float** z, int nx, int& imax, int& jmax)
 	return;
 
 }
+
 void FreeMemoryMatrix(float**& x, int nx)
 {
 	for (int i = 0; i < nx; i++)
@@ -97,6 +102,7 @@ void FreeMemoryMatrix(float**& x, int nx)
 	delete[]x;
 	return;
 }
+
 void FreeMemoryVector(float*& x)
 {
 	delete[]x;

@@ -6,7 +6,7 @@ int main()
 {
 	setlocale(LC_ALL, "Russian");
 	int n;
-	printf("¬ведите размер векторов");
+	printf("¬ведите размер векторов\n");
 	scanf("%i", &n);
 	float* C;
 	float* P;
@@ -33,7 +33,7 @@ int main()
 	else
 	{
 		printf("”словие не выполнено");
-
 	}
+
 	return 0;
 }
